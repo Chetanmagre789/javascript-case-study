@@ -42,18 +42,18 @@ describe('PhoneNumber()', function () {
   });
 
 
-  xit('invalid with letters', function () {
+  it('invalid with letters', function () {
     var phone = new PhoneNumber('123-abc-7890');
     expect(phone.number()).toEqual(null);
   });
 
-  xit('invalid with punctuations', function () {
+  it('invalid with punctuations', function () {
     var phone = new PhoneNumber('123-@:!-7890');
     expect(phone.number()).toEqual(null);
   });
 
   xit('invalid if area code does not start with 2-9', function () {
-    var phone = new PhoneNumber('(123) 456-7890');
+    var phone = new PhoneNumber('(123) 156-7890');
     expect(phone.number()).toEqual(null);
   });
 
