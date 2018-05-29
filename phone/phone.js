@@ -5,6 +5,7 @@ function phone(inputnumber){
 			if(number.length==11 && number.charAt(0)==1){
 					return number=number.slice(1);
 			}
+
 			return null;
 		}
 		return number;
